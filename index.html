@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<style>
+    body {
+        margin:auto;
+        width: 500px;
+        height: 700px;
+        border: 1px solid black; /*for testing purposes*/
+        }
+     
+    .leftcont { 
+        float: left;
+        width:30%;
+        height: 100%;
+        background-color: limegreen;
+        display: grid;
+        grid-template-rows: 4fr 1fr 6fr 1fr 9fr 1fr 3fr;
+        }
+        
+        img{
+            border-radius: 50%;
+            padding: 15% 15% 15% 15%;
+        }
+        
+    .leftcont div:nth-child(2) , .leftcont div:nth-child(4), .leftcont div:nth-child(6) {
+        background-color:  #333333;
+        color: limegreen;
+        text-align: center;
+        font-size: 12px;
+        padding: 6px;
+        }
+        
+    .leftcont div:nth-child(3), .leftcont div:nth-child(5) {
+        font-size: 8px;
+        padding: 15px;
+        text-align: justify;
+        }
+        
+        #hobbydiv {
+            margin: auto;
+        }
+    
+    .rightcont {
+        float: left;
+        width: 70%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(10, 1fr);    
+        }
+        
+    #namediv {
+        font-size: 28px;
+        padding: 40px 40px 0px 20px;
+        }
+        #spec { 
+            color: limegreen;
+        } 
+        
+    #titlediv {
+        font-size: 12px;    
+        padding: 0px 40px 40px 20px;
+        }
+        
+    #specdiv1, #specdiv2, #specdiv3 {
+          margin: auto;
+          width: 90%;
+          padding-bottom: 10px;
+          border-bottom: 3px solid limegreen;
+        }
+        
+        #icon1, #icon2, #icon3 {
+            padding-right: 10px;
+        }  
+        
+        #icon4, #icon5, #icon6 {
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        
+        #educationdiv, #expdiv {
+            margin: auto;
+            width: 90%;
+            padding-top: 20px; padding-bottom: 20px;
+        }
+        
+        .years {
+            margin: auto;
+            width: 25%;
+            float: left;
+            font-size: 8px;
+            
+        }
+        
+        .description {
+            margin: auto;
+            width :75%;
+            float: left;
+            font-size: 8px;
+        }   
+            
+    @media (max-width: 1280px) {
+        
+    } 
+</style> 
+    
+
+</head>
+    
+<body>
+    <div id="leftcolumn" class="leftcont">
+        
+        <div ><img src="https://lesliepknox.com/wp-content/uploads/2019/03/OC-prof.jpg" class="center" height="90" width="90"></div>
+        <div >CONTACT</div>
+        <div >
+            Address<br>
+            Wembley, London<br><br>
+            Mobile<br>
+            +44 7447008461<br><br>
+            Email<br>
+            laszlo.petran@gmail.com<br><br>
+            Website<br>
+            lesliepknox.com<br><br>
+            Skype<br>
+            Laszlo Petran<br><br>
+        </div>
+        <div >ABOUT ME</div>
+        <div id="aboutmediv">I work as a delivery driver and also I'm a freelance writer and translator with 
+            a passion for writing and creating stories. I would like to create my own game in the future, 
+            for which I need two things: one, writing and story creating experience, which I achieved, 
+            and two, programming experience, which I'm hoping to achieve with this great course at Openclassrooms. </div>
+        <div >HOBBIES</div>
+        <div id="hobbydiv">
+            <i class='fas fa-motorcycle' id="icon4" style='font-size:18px'></i>
+            <i class='fas fa-keyboard' id="icon5" style='font-size:18px'></i>
+            <i class='fas fa-pen-alt' id="icon6" style='font-size:18px'></i>
+        </div>
+    </div>
+        
+    <div id="rightcolumn" class="rightcont">
+        <div id="namediv"><span id="spec">LASZLO</span> PETRAN</div> 
+        <div id="titlediv">Back-end developer, Freelance Writer, Translator</div>
+        <div id="specdiv1"><i class='fas fa-graduation-cap' id="icon1" style='font-size:18px'></i>EDUCATION</div>       
+    <div id="educationdiv">
+        <div class="years">2019-Present <br>London</div>
+        <h2 class="description"> Openclassrooms</h2>
+        <div class="description">Java Backend Developer</div><br><br>
+        <div class="years">2010-2014 <br> London</div>
+        <div class="description">Dozens of small courses <br>in Science area, Creative Writing, <br> and English.</div><br><br>
+        <div class="years">2001-2004<br> Hungary</div>
+        <h2 class="description"> GRAMMAR SCHOOL</h2>
+        <div class="description">Basic math, literature, chemistry. </div><br><br>
+        <div class="years">1991-1994<br> Budapest</div>
+        <h2 class="description">Technical College </h2>  
+        <div class="description">Welding, bodywork certificate</div>
+    </div>
+        <div id="specdiv2"><i class='fas fa-briefcase' id="icon2" style='font-size:18px'></i>EXPERIENCE</div>
+    <div id="expdiv">
+        <div class="years">2016-Present <br> London</div>
+        <h2 class="description">Deliveroo</h2>
+        <div class="description">Delivery Driver</div><br>
+        <div class="years">2010-2016<br> London</div>
+        <h2 class="description">Firezza Ltd.</h2>
+        <div class="description">Delivery Driver, CSR, Assistant Manager<br>Taking deliveries, training new drivers,<br> taking phone calls, serving customers,
+            <br>active assist in running weekly business plans. </div><br><br>
+        <div class="years">2007-2010<br> London</div>
+        <h2 class="description">Dominos Pizza </h2>
+        <div class="description"> Delivery Driver, CSR<br>Taking deliveries, training new drivers,<br> taking phone calls, serving customers.</div><br><br>
+        <div class="years"> 2003-2006 <br> Hungary </div>
+        <h2 class="description">W.E.T. Kft.</h2> 
+        <div class="description">Logistic Production Planner<br> Making production plans for cable assembly factory.</div><br><br>
+        <div class="years">1998-2002 <br>Hungary</div>
+        <h2 class="description"> W.E.T. Kft.</h2><br>
+        <div class="description"> Machine Operator, Warehouse and Shift Leader<br> Operation of cable and wire assembling machines,<br>
+            coordination of operators, following weekly production plans.<br> </div>
+    </div>
+        <div id="specdiv3"><i class='fas fa-pencil-alt' id="icon3" style='font-size:18px'></i>REFERENCES</div><br>
+        <div class="description">Openclassrooms Mentor: <br>
+            Vinay Bansal<br>
+        Skype: vinay.bansal25 </div>
+    
+    </div>
+</body>
+</html>
